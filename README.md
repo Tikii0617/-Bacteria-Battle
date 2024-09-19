@@ -57,4 +57,4 @@ When our code and equipment were functioning correctly, we noticed that the samp
 
 ### Team
 
-Sanil Pandhare，Viacheslav，Rachel，Rui，Dekyi
+Sanil Pandhare，Viacheslav，Rachel (Yaqing) Huo，Rui Mao，Dekyi
