@@ -50,12 +50,12 @@ def detect_euglena(thresh_frame, original_frame):
     
     for contour in contours:
         # Approximate the contour to a polygon
-        approx = cv2.approxPolyDP(contour, 0.03 * cv2.arcLength(contour, True), True)
+        approx = cv2.approxPolyDP(contour, 0.05 * cv2.arcLength(contour, True), True)
 
         # Calculate area and filter based on size (tuned to capture Euglena)
         area = cv2.contourArea(contour)
         
-        if 100 < area < 10000:  # Adjust this range to capture smaller objects like Euglena
+        if 100 < area < 8000:  # Adjust this range to capture smaller objects like Euglena
             # Draw bounding boxes around detected Euglena-like shapes
             x, y, w, h = cv2.boundingRect(contour)
             cv2.rectangle(original_frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
@@ -111,15 +111,11 @@ def display_final_result(frame, player1_count, player2_count):
     cv2.imshow(WINDOW_NAME, frame)
     cv2.waitKey(5000)
 
-video_path = "euglena_capture.mp4"
-cap = cv2.VideoCapture(video_path)
-
+cap = cv2.VideoCapture(0)  # Use DirectShow instead of MSMF
 if not cap.isOpened():
-    print("Error: Could not open video file")
+    print("Error: Could not open camera")
     exit()
 
-fps = cap.get(cv2.CAP_PROP_FPS)
-frame_delay = int(1000 / fps)
 
 feature_params = dict(maxCorners=100, qualityLevel=0.3, minDistance=7, blockSize=7)
 lk_params = dict(winSize=(15, 15), maxLevel=2, criteria=(cv2.TERM_CRITERIA_EPS | cv2.TERM_CRITERIA_COUNT, 10, 0.03))
@@ -136,8 +132,8 @@ for message in messages:
 game_duration = 60
 start_time = time.time()
 
-player1_score = 0
-player2_score = 0
+player1_count = 0
+player2_count = 0
 
 # Initialize counters and smoothing parameters
 smoothing_window_size = 10
