@@ -6,14 +6,14 @@
 ## Objectives
 - **Educational**: Introduce players to the concept of phototaxis in Euglena.
 - **Interactive**: Use physical controls to influence digital simulations.
-- **Competitive**: Challenge players to move more bacteria to their side of the screen within a set time frame.
+- **Competitive**: Challenge players to move more Euglena to their side of the screen within a set time frame.
 
 ## Game Setup
 
 ### Hardware Integration:
 - Connect the joystick to the Arduino.
 - Setup LEDs around the display area, connected to the Arduino.
-- Position the camera to capture the entire display area where bacteria movements will be shown.
+- Position the camera to capture the entire display area where Euglena movements will be shown.
 
 ### Software Setup:
 - Use [OpenCV](https://github.com/Tikii0617/-Bacteria-Battle/blob/main/Game.py.py) on the computer to process the images captured by the camera, identifying and counting the Euglena.
@@ -31,7 +31,7 @@
 
 ### Ending the Game:
 - When the timer ends, the software calculates which side has more Euglena.
-- Points are awarded based on the difference in bacteria count between the two sides.
+- Points are awarded based on the difference in Euglena count between the two sides.
 
 ## Scoring System
 - Points are awarded for the number of Euglena moved to the player’s side.
