@@ -54,3 +54,7 @@ Initially, we observed that Euglena did not respond significantly to the additio
 
 ### Additional Effort 3:
 When our code and equipment were functioning correctly, we noticed that the samples were not as active as in the morning experiments. The lack of activity in our samples made it difficult to capture meaningful data. To address this issue, we experimented with different samples, including various sample reagents, slides, and different types of slide covers.
+
+### Team
+
+Sanil Pandhare，Viacheslav，Rachel，Rui，Dekyi
