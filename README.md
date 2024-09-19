@@ -1,4 +1,4 @@
-# Game Development Guide:  Catch Euglena
+# Game Development Guide: Catch Euglena
 
 ## Overview
 "Catch Euglena" is an interactive biotech game where players use a joystick to control LED lights, influencing the movement of Euglena displayed on a computer screen. The game aims to teach basic principles of biotechnology and the effects of light on microbial behavior in a fun and engaging way.
@@ -40,8 +40,9 @@
 ## Conclusion
 This biotech game not only serves as an educational tool but also provides a platform for fun and competitive gameplay. By following this guide, you can create a similar game, adapting and expanding upon the design to suit different themes or more advanced biotechnological concepts.
 
-## Vedio
-<video src="video.mp4.mp4" controls="controls" width="500" height="300"></video>
+## Video
+[Catch Euglena](https://github.com/Tikii0617/-Bacteria-Battle/blob/main/VIDEO.mp4)
+
 
 ## Something Extra Has Been Tried (Physical or Coding)
 
